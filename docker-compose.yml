@@ -1,0 +1,11 @@
+services:
+  mariadb:
+    image: mariadb:10.11
+    container_name: report-mariadb
+    environment:
+      MARIADB_DATABASE: report_db
+      MARIADB_USER: report_user
+      MARIADB_PASSWORD: report_pass
+      MARIADB_ROOT_PASSWORD: root_pass
+    ports:
+      - "3306:3306"
