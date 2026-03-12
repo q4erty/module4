@@ -17,11 +17,9 @@ import java.util.UUID;
 @EqualsAndHashCode
 public class MerchantProductId implements Serializable {
 
-    @JdbcTypeCode(SqlTypes.CHAR)
     @Column(name = "merchant_id", length = 36, nullable = false)
     private UUID merchantId;
 
-    @JdbcTypeCode(SqlTypes.CHAR)
     @Column(name = "product_id", length = 36, nullable = false)
     private UUID productId;
 }

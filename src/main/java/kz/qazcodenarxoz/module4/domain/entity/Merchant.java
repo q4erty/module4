@@ -18,7 +18,6 @@ import java.util.UUID;
 @Setter
 public class Merchant {
     @Id
-    @JdbcTypeCode(SqlTypes.CHAR)
     @Column(length = 36)
     private UUID id;
 

@@ -1,11 +1,10 @@
 services:
-  mariadb:
-    image: mariadb:10.11
-    container_name: report-mariadb
+  postgres:
+    image: postgres:16
+    container_name: report-postgres
     environment:
-      MARIADB_DATABASE: report_db
-      MARIADB_USER: report_user
-      MARIADB_PASSWORD: report_pass
-      MARIADB_ROOT_PASSWORD: root_pass
+      POSTGRES_DB: module5
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
-      - "3306:3306"
+      - "5432:5432"

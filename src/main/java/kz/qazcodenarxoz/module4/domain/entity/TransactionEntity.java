@@ -18,7 +18,6 @@ import java.util.UUID;
 @Setter
 public class TransactionEntity {
     @Id
-    @JdbcTypeCode(SqlTypes.CHAR)
     @Column(length = 36)
     private UUID id;
 
